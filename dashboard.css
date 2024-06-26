@@ -1,0 +1,210 @@
+:root {
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 62.5%;
+
+  --color-primary: #808080;
+  --color-backgroung: #f8f5fa;
+  --color-accent: #1bc5bd;
+  --color-sucess: #08c708;
+  --color-danger: #ff0000;
+  --white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-backgroung);
+  font-family: "Roboto", "Poppins";
+  margin: 0;
+  width: 100dvw;
+  height: 100dvh;
+}
+
+.card {
+  width: 400px;
+  height: 300px;
+  background-color: var(--white);
+  border-radius: 10px;
+  margin: 3rem;
+  padding: 2rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-around;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+.counter {
+  font-size: 1.2rem;
+  color: black;
+}
+.counter-main {
+  font-size: 3rem;
+  font-family: "Roboto", "Poppins";
+  font-weight: 600;
+}
+
+.justi {
+  width: 6rem;
+  text-align: justify;
+}
+.wrapper {
+  margin-bottom: 1rem;
+}
+.description {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.description-main {
+  color: var(--color-primary);
+  font-size: 2rem;
+}
+.progbar {
+  width: 10rem;
+  max-width: 10rem;
+  height: 1.5rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 1rem;
+  margin-left: 0.5rem;
+  display: inline-block;
+}
+
+.bar {
+  color: gold;
+  text-indent: 0.5rem;
+}
+.bar-1 {
+  background-color: var(--color-accent);
+  height: 100%;
+  width: 0;
+  border-radius: 1rem;
+}
+.bar-2 {
+  border-radius: 1rem;
+  background-color: var(--color-sucess);
+  height: 100%;
+  width: 0;
+}
+.bar-3 {
+  border-radius: 1rem;
+  background-color: var(--color-danger);
+  height: 100%;
+  width: 0;
+}
+.bar-4 {
+  border-radius: 1rem;
+  background-color: var(--color-primary);
+  height: 100%;
+  width: 0;
+}
+.add {
+  background-color: #1bc5bd;
+  border: 1px solid transparent;
+  border-radius: 0.6rem;
+  text-align: center;
+  align-self: flex-end;
+  color: #f8f5fa;
+  height: 4.5rem;
+  width: 4.5rem;
+  box-shadow: none;
+  font-weight: 500;
+  font-size: 3rem;
+  transition: 500ms;
+}
+
+button:hover {
+  border-color: #1bc5bd;
+  color: #1bc5bd;
+  background-color: #f8f5fa;
+}
+.btn-accent {
+  color: var(--color-accent);
+  background-color: var(--color-backgroung);
+  border: 1px solid var(--color-accent);
+  border-radius: 0.6rem;
+  text-align: center;
+  height: 4.5rem;
+  max-width: 8.5rem;
+  box-shadow: none;
+  font-weight: 700;
+  transition: 500ms;
+}
+.btn-accent:hover {
+  border-color: var(--white);
+  color: var(--white);
+  background-color: var(--color-accent);
+}
+
+.pop {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  height: 100dvh;
+  width: 100dvw;
+  display: none;
+}
+.up {
+  background-color: var(--color-backgroung);
+  position: absolute;
+  padding: 2rem;
+  border-radius: 1rem;
+  top: 10%;
+  left: 10%;
+  height: 80dvh;
+  width: 80dvw;
+  max-width: 50rem;
+  display: none;
+}
+
+.corner-up {
+  display: flex;
+  justify-content: end;
+  padding: 1rem;
+}
+
+.collapse {
+  background-color: var(--color-accent);
+  color: var(--color-backgroung);
+  border: 1px solid var(--color-accent);
+  border-radius: 5px;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.show {
+  display: block;
+}
+
+label {
+  font-family: "roboto";
+  display: block;
+}
+input {
+  margin-bottom: 2rem;
+  font-family: "roboto";
+  font-size: 2rem;
+}
+
+@media screen and (width<500px) {
+  .card {
+    width: 90dvw;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+  }
+}

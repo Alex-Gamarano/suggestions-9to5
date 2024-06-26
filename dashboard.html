@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dashboard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Dashboard Card</title>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <div class="wrapper column">
+          <div class="wrapper">
+            <div class="counter counter-main">0</div>
+            <div class="description-main">Projects</div>
+          </div>
+          <button class="btn-accent">All Projects</button>
+        </div>
+
+        <div class="wrapper column">
+          <div class="wrapper">
+            <div class="description">
+              <span class="counter">0</span>&nbsp;&nbsp;<span class="justi">Active</span>
+              <span class="progbar">
+                <div class="bar bar-1"></div>
+              </span>
+            </span>
+          </div>
+          <div class="description">
+            <span class="counter">0</span>&nbsp;&nbsp;<span class="justi">Completed</span>
+            <span class="progbar">
+                <div class="bar bar-2"></div>
+
+              </span>
+            </div>
+            <div class="description">
+              <span class="counter">0</span>&nbsp;&nbsp;<span class="justi">Paused</span>
+              <span class="progbar">
+                <div class="bar bar-3"></div>
+              </span>
+            </div>
+            <div class="description">
+              <span class="counter">0</span>&nbsp;&nbsp;<span class="justi">Draft</span>
+              <span class="progbar">
+                <div class="bar bar-4"></div>
+              </span>
+            </div>
+          </div>
+          <button class="add">+</button>
+        </div>
+      </div>
+    
+      <section class="pop ghost">
+          <div class="up ghost">
+            <div class="corner-up">
+              <button class="collapse">X</button>
+            </div>
+            <div>
+              <form>
+                <label for="project">Project Name</label>
+                <input type="text" id="project" name="project">
+                
+                <label for="customer">Customer</label>
+                <input type="text" id="customer" name="customer" >
+                
+                <label for="team">Team</label>
+                <input type="text" id="team">
+                
+                <label for="status">Status</label>
+                <select name="status" id="status">
+                  <option value="0">Active</option>
+                  <option value="1">Completed</option>
+                  <option value="2">Paused</option>
+                  <option value="3">Draft</option>
+                </select>
+                <input class="btn-accent" type="button" value="Submit" id="enviar">
+              </form>
+            </div>
+          </div>
+      </section>
+    
+    </main>
+
+    <script src="./dashboard.js"></script>
+  </body>
+</html>
